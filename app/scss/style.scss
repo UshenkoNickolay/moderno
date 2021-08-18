@@ -1945,4 +1945,118 @@ margin-bottom: 100px;
 }
 // end about us
 
+// start contact us
+
+.contact__head{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.contact__inner{
+  padding: 35px 40px 15px;
+}
+.contact__map{
+  margin-bottom: 50px;
+  iframe{
+    width: 100%;
+    height: 415px;
+  }
+}
+.contact__box{
+  display: flex;
+}
+.contact__info-item{
+  margin-bottom: 30px;
+}
+.contact__info{
+  margin-right: 30px;
+  max-width: 330px;
+  width: 100%;
+}
+.contact__info-item{
+  margin-bottom: 20px;
+}
+.contact__info-title{
+  padding-bottom: 20px;
+  position: relative;
+  font-size: 20px;
+  @include f500;
+  color: $bg;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  &::after{
+    content: '';
+    width: 44px;
+    height: 4px;
+    background-color: $green;
+    left: 40px;
+    bottom: 0;
+    position: absolute;
+  }
+  &::before{
+    color: $green;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+  }
+}
+.contact__info-content{
+  padding-left: 40px;
+  color: #707070;
+  max-width: 230px;
+}
+.contact__form-title{
+  font-size: 24px;
+  margin-bottom: 25px;
+  @include f500;
+  color: #333;
+}
+.contact__form-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__form{
+  width: 100%;
+  input{
+    height: 43px;
+    padding-right: 17px;
+    padding-left: 17px;
+    border: none;
+    background-color: #f1f4f5;
+    width: 350px;
+    display: block;
+    margin-bottom: 30px;
+    &::placeholder{
+      font-size: 15px;
+      color: #7a7a7a;
+    }
+  }
+  textarea{
+    height: 190px;
+    border: none;
+    padding: 13px 17px;
+    background-color: #f1f4f5;
+    width: 100%;
+    display: block;
+    resize: none;
+    margin-bottom: 23px;
+    &::placeholder{
+      font-size: 15px;
+      color: #7a7a7a;
+    }
+  }
+  button{
+    border: none;
+    font-size: 16px;
+    background-color: $green;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    @include f700;
+    padding: 20px 5px;
+    width: 190px;
+  }
+}
+// end contact us
+
 @import 'media';
