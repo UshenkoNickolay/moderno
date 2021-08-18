@@ -1862,9 +1862,87 @@ button.icon-unsorted {
     @include f500;
   }
 }
-
-
 // end product-one
 
+// start page-404
+.page-404__wrapper,
+.about__wrapper,
+.contact__wrapper{
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  margin-bottom: 150px;
+}
+.page-404__head,
+.about__head,
+.contact__head{
+  font-size: 24px;
+  color: #444;
+  padding: 23px 27px;
+  @include f500;
+  border-bottom: 1px solid #dcdcdc;
+}
+.page-404__inner{
+  background-color: $green;
+  text-align: center;
+  color: #fff;
+}
+.page-404__mistake{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 300px;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  line-height: 300px;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/page-404.png);
+    width: 157px;
+    height: 301px;
+  }
+}
+.page-404__title{
+  margin-bottom: 30px;
+  @include f300;
+  font-size: 30px;
+}
+.page-404__text{
+  font-size: 18px;
+  max-width: 501px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.page-404__link{
+font-size: 14px;
+text-align: center;
+color: #fff;
+text-transform: uppercase;
+padding: 20px 30px 16px;
+border: 1px solid #fff;
+border-radius: 4px;
+margin-bottom: 100px;
+}
+// end page-404
+
+// start about us
+.about__inner{
+  padding: 0px 50px;
+}
+.about__box{
+  h3{
+    font-size: 20px;
+    @include f700;
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  p{
+    margin-bottom: 40px;
+    @include f500;
+    color: #444;
+  }
+}
+// end about us
 
 @import 'media';
