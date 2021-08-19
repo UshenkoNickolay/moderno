@@ -43,6 +43,9 @@ $('.product-one__tabs .tab, .settings__tabs .tab').on('click', function(event) {
   });
 
 
+$('input[type="file"], select').styler();
+
+
 $('.menu__btn').on('click', function(){
   $('.menu__list').slideToggle();
 });
